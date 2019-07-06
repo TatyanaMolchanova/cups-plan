@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+@import 'normalize';
+@import 'mixin';
+
+@font-face {
+  font-family: "Miso";
+  src: url("../fonts/miso.ttf") format("ttf"),
+  		url("../fonts/Miso.eot") format("eot"),
+  		url("../fonts/Miso.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Miso Bold";
+  src:	url("../fonts/MISO-BOL.eot") format("eot"),
+  		url("../fonts/MISO-BOL.ttf") format("ttf"),
+  		url("../fonts/MISO-BOL.woff") format("woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font: 10px/1.6 Lato, sans-serif;
+	height: 100%;
+}
+
+body {
+	font-size: 2rem;
+	color: #333;
+	height: 100%;
+	background-color: #fdde7e;
+}
+
+.cups {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    &__wrap {
+    	background-color: #fff;
+    	width: 360px;
+    	justify-content: center;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    padding: 10px;
+    	&:nth-child(odd) {
+    		height: 80%;
+    	}
+    	&:nth-child(even) {
+    		height: 90%;
+    	}
+    }
+    &__prize {
+    	font-family: "Miso Bold", sans-serif;
+    	font-size: 7rem;
+    	color: #02995b;
+    	letter-spacing: 2px;
+    }
+    &__title {
+		font-family: Miso, sans-serif;
+    	font-size: 5.6rem;
+    	text-transform: capitalize;
+    }
+    p {
+    	letter-spacing: 1px;
+    	margin: 0;
+    }
+}
